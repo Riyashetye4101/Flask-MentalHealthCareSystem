@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stress Recommendation for Medium Stress</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height:580px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  height:78px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 580px;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active1, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active1:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+    </head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="tab">
+    <button class="tablinks" onclick="openRelief(event,'Yoga')"  id="defaultOpen">Yoga & Meditation</button>
+    <button class="tablinks" onclick="openRelief(event,'Books')">Books</button>
+    <button class="tablinks" onclick="openRelief(event,'Music')">Music</button>
+    <button class="tablinks" onclick="openRelief(event,'Outdoor')"> Activities</button>
+    <button class="tablinks" onclick="openRelief(event,'Videos')"> Motivational Videos</button>
+    <button class="tablinks" onclick="openRelief(event,'Movies')">Movies</button>
+
+   </div>
+
+    <div id="Yoga" class="tabcontent">
+      <h2>Yoga & Meditation</h2>
+
+      <button class="accordion">Mindfulness Meditation</button>
+      <div class="panel">
+        <p>In mindfulness meditation, you pay attention to your thoughts as they pass through your mind. You don’t judge the thoughts or become involved with them. You simply observe and take note of any patterns.<br>
+
+            This practice combines concentration with awareness. You may find it helpful to focus on an object or your breath while you observe any bodily sensations, thoughts, or feelings.<br>
+       <a href="https://www.verywellmind.com/mindfulness-meditation-88369#:~:text=Mindfulness%20meditation%20is%20a%20mental,both%20your%20mind%20and%20body.&text=Techniques%20can%20vary%2C%20but%20in,awareness%20of%20body%20and%20mind.">Mindfulness Meditation</a>
+        </p>
+      </div>
+      <button  class="accordion">Spiritual Meditation</button>
+      <div class="panel">
+        <p>Spiritual meditation is used in Eastern religions, such as Hinduism and Daoism, and in Christian faith.<br>
+
+            It’s similar to prayer in that you reflect on the silence around you and seek a deeper connection with your God or Universe.<br>
+
+            Essential oils are commonly used to heighten the spiritual experience. Popular options include:
+            <ul>
+            <li>frankincense</li>
+            <li>myrrh</li>
+            <li>sage</li>
+            <li>cedar</li>
+            <li>sandalwood</li>
+            <li>palo santo</li></ul>
+            Spiritual meditation can be practiced at home or in a place of worship.</p>
+            <a href="https://uh.edu/adbruce/spiritual-meditation/#:~:text=Spiritual%20meditation%20is%20an%20experience,light%20warms%20up%20your%20being.">Spiritual Meditation</a>
+      </div>
+      <button class="accordion">Focused Meditation</button>
+      <div class="panel">
+        <p>Focused meditation involves concentration using any of the five senses.<br>
+
+            For example, you can focus on something internal, like your breath, or you can bring in external influences to help focus your attention.<br>
+
+            Try counting mala beads, listening to a gong, or staring at a candle flame.</p>
+            <a href="https://www.verywellmind.com/practice-focused-meditation-3144785#:~:text=Focused%20meditation%20can%20be%20a,without%20a%20specific%20focal%20point.">Focused Meditation</a>
+      </div>
+
+
+      <button class="accordion">Corpse Pose</button>
+      <div class="panel">
+        <p><strong>Instructions:</strong>
+
+            Lie down calmly on you back. Make sure your legs don’t touch each other and your palms are facing upwards. With your eyes closed and face relaxed, start breathing deeply. As you breathe slowly bring your attention to each part of your body. Start from the top of the head and progress slowly to your feet.<br>
+
+            <strong>Why is it a Great Yoga Pose for Stress Relief?</strong>
+           <ul>
+               <li>This pose puts our body to ease and offers complete relaxation</li>
+            <li>It triggers a state of deep rests that calms our nervous system and lowers blood pressure.</li>
+            <li>Your mind and body cool down with this yoga pose.</li></ul>
+           <strong> Required time for this Relaxing Yoga Pose:</strong> 3-5 minutes of this stress-relieving yoga pose can help you attain relaxation.</p>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/TJNfblsl5i4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <button class="accordion">More</button>
+      <div class="panel">
+
+            <a href="https://www.calmsage.com/yoga-poses-to-relieve-stress/">More Yoga poses for stress relaxation</a>
+      </div>
+    </div>
+
+    <div id="Books" class="tabcontent">
+      <h2>Books</h2>
+      <button class="accordion">1. Taming Your Gremlin</button>
+      <div class="panel">
+        <p><a href="https://go.skimresources.com/?id=122276X1582760&isjs=1&jv=15.2.0-stackpath&sref=https%3A%2F%2Fwww.inc.com%2Fgeoffrey-james%2F7-short-books-that-quickly-reduce-stress.html&url=http%3A%2F%2Fwww.amazon.com%2FTaming-Your-Gremlin-Surprisingly-Getting%2Fdp%2F0060520221%2F%3Ftag%3Dwwwinccom-20&xguid=01FFSKDVVMKP6RNESHHB3Q17H3&xs=1&xtz=-330&xuuid=764730b426a094c83507e855522923a8&xjsf=other_click__auxclick%20%5B2%5D">Taming Your Gremlin</a></p>
+      <p><strong>How it reduces stress:</strong> Stress is always the result of how you're interpreting the events in your life. Stress affects you only insofar as you believe that that interpretation represents reality. This book (which you can read in about two hours) shows you that it's not just possible but extremely easy to ignore that part of your brain that's constantly interpreting things, thereby eliminating the source of your stress.<br>
+
+        <strong>Best quote:</strong> "Your gremlin is the narrator in your head. He has influenced you since you came into this world, and he accompanies you throughout your entire existence. He's with you when you wake up in the morning and when you go to sleep at night. He tells you who and how you are, and he defines and interprets your every experience. He wants you to accept his interpretations as reality, and his goal, from moment to moment, day to day, is to squelch the natural vibrant you within..."</p>
+    </div>
+    <button class="accordion">2. Don't Sweat the Small Stuff ... and It's All Small Stuff</button>
+    <div class="panel">
+      <p><a href="https://go.skimresources.com/?id=122276X1582760&isjs=1&jv=15.2.0-stackpath&sref=https%3A%2F%2Fwww.inc.com%2Fgeoffrey-james%2F7-short-books-that-quickly-reduce-stress.html&url=http%3A%2F%2Fwww.amazon.com%2FDont-Sweat-Small-Stuff-Its%2Fdp%2F0786881852%2F%3Ftag%3Dwwwinccom-20&xguid=01FFSKDVVMKP6RNESHHB3Q17H3&xs=1&xtz=-330&xuuid=764730b426a094c83507e855522923a8&xjsf=other_click__auxclick%20%5B2%5D"> Don't Sweat the Small Stuff ... and It's All Small Stuff</a></p>
+    <p><strong>How it reduces stress:</strong>While the previous book relieves stress by creating an awareness of (and an ability to ignore) the inner voice that's making you miserable, this book subverts the "gremlin" head-on by providing a new and much-less-stressful perspective on the events in our lives that we use to create stress. Hint: Read the whole book and then get a "stress-relieving boost" by reading specific chapters when you encounter those specific situations. <br>
+
+      <strong>Best quote:</strong>"There is another way to relate to life--a softer, more graceful path that makes life seem easier and the people in it more compatible. This 'other way' of living involves replacing old habits of 'reaction' with new habits of perspective. These new habits enable us to have richer, more satisfying lives."</p>
+  </div>
+  <button class="accordion">3. Tao Te Ching</button>
+    <div class="panel">
+        <p><a href="https://go.skimresources.com/?id=122276X1582760&isjs=1&jv=15.2.0-stackpath&sref=https%3A%2F%2Fwww.inc.com%2Fgeoffrey-james%2F7-short-books-that-quickly-reduce-stress.html&url=http%3A%2F%2Fwww.amazon.com%2FTao-Te-Ching-Laozi%2Fdp%2F0060812451%2F%3Ftag%3Dwwwinccom-20&xguid=01FFSKDVVMKP6RNESHHB3Q17H3&xs=1&xtz=-330&xuuid=764730b426a094c83507e855522923a8&xjsf=other_click__auxclick%20%5B2%5D">Tao Te Ching</a></p>
+        <p><strong>How it reduces stress:</strong> While reading the classic Holy Books can relieve stress, the Torah, the Bible, and the Koran are lengthy and complex books and can take a lifetime to understand. By contrast, the Tao Te Ching is a one-hour read, isn't connected to any (organized) religion, and helps you understand that stress and the busywork it generates are things that you're doing to yourself and can be easily avoided.<br>
+
+            <strong>Best quote:</strong> "Simplicity, patience, compassion. These three are your greatest treasures. Simple in actions and thoughts, you return to the source of being. Patient with both friends and enemies, you accord with the way things are. Compassionate toward yourself, you reconcile all beings in the world."</p>
+        </div>
+    <button class="accordion">4. What I'd Say to the Martians: And Other Veiled Threats</button>
+            <div class="panel">
+                <p><a href="https://go.skimresources.com/?id=122276X1582760&isjs=1&jv=15.2.0-stackpath&sref=https%3A%2F%2Fwww.inc.com%2Fgeoffrey-james%2F7-short-books-that-quickly-reduce-stress.html&url=http%3A%2F%2Fwww.amazon.com%2FWhat-Id-Say-Martians-Threats%2Fdp%2F1401322662%2F%3Ftag%3Dwwwinccom-20&xguid=01FFSKDVVMKP6RNESHHB3Q17H3&xs=1&xtz=-330&xuuid=764730b426a094c83507e855522923a8&xjsf=other_click__auxclick%20%5B2%5D"> What I'd Say to the Martians: And Other Veiled Threats</a></p>
+                <p><strong>How it reduces stress:</strong>Laughter is a well-known stress reliever but while there are hundreds of great comedians and countless funny movies, there are few books that can summon more than an occasional chuckle. Jack Handey (some might remember him from the "Deep Thoughts" segments on Saturday Night Live) somehow manages to be ROFL funny with nearly every paragraph. Read any chapter at random (they're all really short) and chances are you'll immediately interrupt whatever stressful thoughts were giving you grief.<br>
+
+                    <strong>Best quote:</strong> "I remember when we were kids, one of our favorite games was to play 'pirate.' We'd dress up like pirates. Then we'd go find an adult walking down the street and we'd go up to him and pull out our butcher knives, which we called 'swords,' and say, 'We're pirates! Give us your money!' A lot of adults would pretend to be scared and give us their money. Others would suddenly run away, yelling for help. We played pirate until we were twenty or so."</p>
+                </div>
+        <button class="accordion">5. The Consolation of Philosophy</button>
+                <div class="panel">
+                    <p><a href="https://go.skimresources.com/?id=122276X1582760&isjs=1&jv=15.2.0-stackpath&sref=https%3A%2F%2Fwww.inc.com%2Fgeoffrey-james%2F7-short-books-that-quickly-reduce-stress.html&url=http%3A%2F%2Fwww.amazon.com%2FConsolation-Philosophy-Penguin-Classics%2Fdp%2F0140447806%2F%3Ftag%3Dwwwinccom-20&xguid=01FFSKDVVMKP6RNESHHB3Q17H3&xs=1&xtz=-330&xuuid=764730b426a094c83507e855522923a8&xjsf=other_click__auxclick%20%5B2%5D"> The Consolation of Philosophy</a></p>
+                    <p><strong>How it reduces stress:</strong>For a thousand years of European history, this was the go-to book for achieving life wisdom. While it's not the easiest read (it's a dialog between the writer and the goddess of philosophy), The Consolation is short and to the point and it deals with the "big issues" that create huge stress, like why bad things happen to good people. Ironically, it was written while the author was in prison and he was executed soon after completing it.<br>
+
+                        <strong>Best quote:</strong>"You think that the goddess Fortune has abandoned you, but it is only in change that She shows consistency. That was true when She caressed you and seduced you with false happiness. Consider yourself lucky to have discovered Her true character. If you love Her gifts, take Her as She is and stop complaining! If you don't, then renounce Her and Her delusions. The events that bring you grief today will bring you tranquility once you realized you've been forsaken by the blind goddess who eventually forsakes everyone." </p>
+                    </div>
+
+    </div>
+
+    <div id="Music" class="tabcontent">
+      <h2>Music</h2>
+      <button class="accordion">1. Marconi Union, “Weightless”</button>
+      <div class="panel">
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A6kkwzB6hXLIONkEk9JciA6" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <p>Marconi Union is an English ambient music band that worked with sound therapists to create what is known as the most relaxing song in the world. The song actually induced a 65 percent reduction in overall stress among participants.<br>
+            The song contains a sustaining rhythm that starts at 60 beats per minute and gradually slows to around 50. While listening, your heart rate gradually comes to match that beat.</p>
+    </div>
+    <button class="accordion">2. Airstream, “Electra”</button>
+    <div class="panel">
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A4c5NPPndaEkb0dUVYFlKlT" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <p>The tempo matches the optimal resting heart rate of 60 to 65 beats per minute. The mid-range frequencies and absence of a low, heavy bass is less taxing on the nervous system.<br>
+
+        This song definitely has a “chiller” vibe to it, and it has more of a hip-hop beat, but nothing to the extreme. Yoga fans might find this the perfect background music for their sun salutations.</p>
+  </div>
+
+    <button class="accordion">3. Sleep Music</button>
+            <div class="panel">
+                <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/774535038&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <p>These tracks were composed with the goal of enabling the listener to go into a deep state of relaxation.</p>
+                </div>
+        <button class="accordion">4. Calm Music</button>
+                <div class="panel">
+                    <iframe src="https://open.spotify.com/embed/track/6xsOIolcDvXCHyJkpWJVuk" width="100%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <button class="accordion">5. Ambient Dreaming</button>
+                    <div class="panel">
+                        <iframe src="https://open.spotify.com/embed/track/5yjT8vMPCYfQbblxLtmOPB" width="100%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+    </div>
+
+    <div id="Outdoor" class="tabcontent">
+      <h2> Activities</h2>
+      <button class="accordion">Walking</button>
+      <div class="panel">
+        <p>The great thing about walking is that it can be done almost anywhere and without any specialized or expensive equipment. Walking can also be done by just about anyone in any age group and at any level of fitness. As you get better and walk more you can increase your daily walking distance and even move to jogging and eventually running. Walking has been shown to be good for joint pain relief, stress relief, and has even been shown to provide benefits for individuals who suffer from rheumatoid arthritis.</p>
+         </div>
+
+            <button class="accordion">Spending Time In Nature</button>
+         <div class="panel">
+             <p>While you probably are not going to be able to go spend time in the great outdoors on a regular basis, many studies have shown that even taking a few days off a couple of times a year in order to go hiking, taking up gardening, or doing another similar outdoor activity can be an excellent way to reduce stress and get exercise. You may want to consider visiting a state or national park for a few days with some friends and family. Research shows that spending time in nature can reduce stress, alleviate anxiety, and decrease the likelihood of developing stress.</p>
+         </div>
+         <button class="accordion">Creative Creations</button>
+         <div class="panel">
+             <p> Art has a way of being therapeutic, whether you have a talent for it or not. Take your imagination outdoors, embrace the fresh air, and relax your mind through an art project. Try painting, sketching, or even jewelry making to unplug and gain some inspiration. Many studies suggest that partaking in creative activities not only reduces stress but is linked to maintaining cognitive skills as you age.</p>
+         </div>
+
+        <button class="accordion">Sample Sports</button>
+             <div class="panel">
+                 <p>Attempt a new outdoor activity you’ve always wanted to try like rowing, Pilates in the park, or mountain biking. Look to your friends or local community for inspired team leagues like kickball or Frisbee golf to keep you active. Research proves that exercising outdoors has a positive impact on blood pressure, lung function, sleep, and stress. Plus vitamin D from the sun naturally helps your body regulate insulin and calcium, aiding in the prevention of diabetes and osteoporosis.</p>
+             </div>
+             <button class="accordion">Write it down</button>
+             <div class="panel">
+                 <p>One way to handle stress is to write things down.
+
+                  While recording what you’re stressed about is one approach, another is jotting down what you’re grateful for.
+
+                  Gratitude may help relieve stress and anxiety by focusing your thoughts on what’s positive in your life.</p>
+             </div>
+            </div>
+            <div id="Videos" class="tabcontent">
+                <h3>Motivational Videos</h3>
+
+                <iframe width="30%" height="200" src="https://www.youtube.com/embed/vpO_3ZegQL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="30%" height="200" src="https://www.youtube.com/embed/wIaYlgAUEBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="30%" height="200" src="https://www.youtube.com/embed/t6Kw3n9CNrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="30%" height="200" src="https://www.youtube.com/embed/n49ki7qUXmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="30%" height="200" src="https://www.youtube.com/embed/B7T5rITvMJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+              </div>
+    <div id="Movies" class="tabcontent">
+        <h2>Movies</h2>
+        <button class="accordion">1. The Producers</button>
+        <div class="panel">
+          <p><a href="https://www.imdb.com/title/tt0063462/">The Producers</a></p>
+        <p>
+            This classic movie from 1968 is great if you want to laugh until your sides ache. Zero Mostel and Gene Wilder play the two main characters and this golden comedy pairing is impossible to beat.
+        </p></div>
+      <button class="accordion">2. Inside Out</button>
+      <div class="panel">
+        <p><a href="https://www.imdb.com/title/tt2096673/">Inside Out</a></p>
+      <p>
+        This animated tale about the inner workings of a young girl’s mind is surprisingly apt for its Disney label. Touching on themes of loneliness, anger, sadness, and pure joy, its bright setting and uplifting story will definitely lift your spirits. And it shares important lessons for mental wellness: that crying is helpful, other people make tough emotions easier, and letting it out is the best way to feel better.
+      </p></div>
+    <button class="accordion">3. Amélie</button>
+      <div class="panel">
+          <p><a href="https://www.imdb.com/title/tt0211915/">Amélie</a></p>
+          <p>
+            his French film is everything that a person looking for a quietly happy film is looking for. Quirky and a little goofy, this story about a young woman looking for love and trying to improve the lives of people around her is smart, funny, and out of the ordinary.
+          </p></div>
+      <button class="accordion">4. Ocean’s Eleven</button>
+              <div class="panel">
+                  <p><a href="https://www.imdb.com/title/tt0240772/">Ocean’s Eleven</a></p>
+                  <p>
+                    This one’s for the action/adventure lovers out there who are looking for a star-studded, hilarious joyride of a film. The tale of a big Vegas heist, Ocean’s Eleven is stylish, fast-paced, and just a lot of fun for anyone trying to forget their problems for a while.
+                  </p></div>
+          <button class="accordion">5. Spirited Away</button>
+                  <div class="panel">
+                      <p><a href="https://en.wikipedia.org/wiki/Spirited_Away"> Spirited Away</a></p>
+                      <p>
+                          This Japanese film is an all-encompassing escape. Combining gorgeous animation, traditional Japanese mythology, and the delicate magic touch of its director Hayao Miyazaki, this film lifts you out of reality if only for a couple of hours.
+                      </p></div>
+
+                             </div>
+
+                                <script>
+                                    function openRelief(evt, reliefName) {
+                                      var i, tabcontent, tablinks;
+                                      tabcontent = document.getElementsByClassName("tabcontent");
+                                      for (i = 0; i < tabcontent.length; i++) {
+                                        tabcontent[i].style.display = "none";
+                                      }
+                                      tablinks = document.getElementsByClassName("tablinks");
+                                      for (i = 0; i < tablinks.length; i++) {
+                                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                      }
+                                      document.getElementById(reliefName).style.display = "block";
+                                      evt.currentTarget.className += " active";
+                                    }
+
+                                    // Get the element with id="defaultOpen" and click on it
+                                    document.getElementById("defaultOpen").click();
+                                    </script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active1");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+
+</body>
+</html>

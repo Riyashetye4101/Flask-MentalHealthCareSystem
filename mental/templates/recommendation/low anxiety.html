@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height:580px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  height:78px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 635px;
+}
+</style>
+</head>
+<body>
+
+
+    {% include 'navbar.html' %}
+
+<div class="tab">
+  <button class="tablinks" onclick="openRelief(event, 'London')" id="defaultOpen">Exercises</button>
+  <button class="tablinks" onclick="openRelief(event, 'Paris')">Meditate</button>
+  <button class="tablinks" onclick="openRelief(event, 'Tokyo')">Read Books</button>
+  <button class="tablinks" onclick="openRelief(event, 'music')" >Music</button>
+  <button class="tablinks" onclick="openRelief(event, 'connect')">Connect With People</button>
+  <button class="tablinks" onclick="openRelief(event, 'movies')">Movies</button>
+  <button class="tablinks" onclick="openRelief(event, 'motiv')" >Motivational Videos</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+  <h2>Exercises</h2>
+  <p>
+      <ul>
+          <li>Anxiety is a typical human reaction to stress. But too much anxiety can get in the way of living a healthy, happy life. If you feel caught up in your anxiety, try the following exercise</li>
+
+           <li>Relax by breathing</li>
+<ol>
+            <li>Sit in a quiet and comfortable place. Put one of your hands on your chest and the other on your stomach. Your stomach should move more than your chest when you breathe in deeply.</li>
+           <li>Take a slow and regular breath in through your nose. Watch and sense your hands as you breathe in. The hand on your chest should remain still while the hand on your stomach will move slightly.</li>
+           <li>Breathe out through your mouth slowly.</li>
+           <li>Repeat this process at least 10 times or until you begin to feel your anxiety lessen.
+           </li></ol>
+
+           <li>Relax by visualizing:<br>
+            When you start to feel anxious, sit in a quiet and comfortable place. Think of your ideal place to relax. While it can be any place in the world, real or imaginary, it should be an image that you find very calming, happy, peaceful, and safe. Make sure it’s easy enough to think about so you can return to it in your mind when you feel anxious in the future.
+
+            Think of all the small details you’d find if you were there. Think about how the place would smell, feel, and sound. Envision yourself in that place, enjoying it comfortably.
+
+            Once you have a good picture of your “happy place,” close your eyes and take slow and regular breaths through your nose and out of your mouth. Be aware of your breathing and continue focusing on the place you’ve imagined in your mind until you feel your anxiety lifting. Visit this place in your mind whenever you feel anxious.</li>
+
+        </ul>
+        <iframe width="272" height="200" src="https://www.youtube.com/embed/BLIKQwHITyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="272" height="200" src="https://www.youtube.com/embed/hJbRpHZr_d0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h2>Meditation</h2>
+  <p><ul>
+      <li>If you're living with generalized anxiety, practicing daily meditation may help you to overcome anxiety and reduce tension in your body.The key to learning to practice meditation is to accept the world around you from a place of curious observation. If you've ever taken a yoga class, you are already well on your way to practicing meditation.Follow these simple steps to get started with meditation today.</li><br>
+    <li>Steps for Mindfulness Meditation:</li>
+    <ol>
+        <li>Sit upright in a chair and place your feet flat on the floor.</li>
+        <li>Begin paying attention to your breath. Don't try to change how you are breathing; simply observe your body as you inhale and exhale.</li>
+        <li>You might feel compelled to shift your focus elsewhere. Resist this urge and continue to focus on your breathing.</li>
+        <li>Anxious thoughts may pass through your mind. Acknowledge them, but then bring yourself back to awareness of your breathing.</li>
+        <li>Continue this quiet, nonjudgmental observation for about 10 minutes.</li>
+        <li>Open your eyes and notice how you feel. Don't evaluate, just observe.</li>
+    </ol></li>
+</ul></p>
+<iframe width="260" height="200" src="https://www.youtube.com/embed/O-6f5wQXSu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h2>Read</h2>
+  <p><ul>
+      <li>You can read book from the following suggestions</li>
+
+      <ol>
+          <li>For a well-told history:<strong><a href="https://www.amazon.com/My-Age-Anxiety-Dread-Search/dp/0307390608/ref=sr_1_26?ots=1&slotNum=2&imprToken=d0be0433-f8bf-129f-33f&s=books&ie=UTF8&qid=1535387717&sr=1-26&keywords=anxiety&ascsubtag=[]c2[p]cjlcs32wz0048tmy6bjbvl709[i]zhPFBB[u]1[t]w[r]google.com[d]D[z]m&tag=thecutonsite-20">My Age of Anxiety</a></strong> by Scott Stossel <br>
+          (Reviewers say the book’s historical research is “exhaustive,” they’re also nearly unanimous in their praise of its humanity and relatability. If you want a better understanding of your anxiety disorder, or are curious to learn more about how our culture understands and treats it, this is a must-read.)</li><br>
+          <li>For a fun and fictional version:<strong><a href="https://www.amazon.com/Turtles-All-Down-John-Green/dp/0525555366/ref=sr_1_1?ots=1&slotNum=3&imprToken=acbe0437-0759-5f85-560&s=books&ie=UTF8&qid=1535398792&sr=1-1&keywords=turtles+all+the+way+down&ascsubtag=[]c2[p]cjlcs32wz0048tmy6bjbvl709[i]zhPFBB[u]1[t]w[r]google.com[d]D[z]m&tag=thecutonsite-20">Turtles All the Way Down</a></strong> by John Green<br>
+          (Inspired by his own struggles with anxiety (and obsessive compulsive tendencies), Turtles All the Way Down is John Green’s most recent beloved young adult novel. Like many of Green’s novels, Turtles is ostensibly about a zany plot between teenagers — this time, to “pursue the mystery of fugitive billionaire Russell Pickett” — but it’s also about so much more.)</li><br>
+          <li>For solidarity in the struggle: <strong><a href="https://www.amazon.com/First-We-Make-Beast-Beautiful/dp/0062836781/ref=sr_1_12?ots=1&slotNum=4&imprToken=acbe0437-0759-5f85-560&s=books&ie=UTF8&qid=1535387693&sr=1-12&keywords=anxiety&ascsubtag=[]c2[p]cjlcs32wz0048tmy6bjbvl709[i]zhPFBB[u]1[t]w[r]google.com[d]D[z]m&tag=thecutonsite-20">First, We Make the Beast Beautiful: A New Journey Through Anxiety </a></strong> by Sarah Wilson<br>
+          (Taking her inspiration (and her title) from a Chinese proverb, author Sarah Wilson (who also wrote the best seller I Quit Sugar) culls from existing literature on anxiety, and interviews with fellow sufferers, to present readers with small, actionable advice on managing daily life with an anxiety disorder)
+
+        </li><br>
+          <li>For practical tips and tasks: <strong><a href="https://www.amazon.com/Anxiety-Phobia-Workbook-Edmund-Bourne/dp/1626252157/ref=sr_1_8?ots=1&slotNum=5&imprToken=14be043b-1c94-ac05-323&s=books&ie=UTF8&qid=1535388515&sr=1-8&keywords=anxiety+book&ascsubtag=[]c2[p]cjlcs32wz0048tmy6bjbvl709[i]zhPFBB[u]1[t]w[r]google.com[d]D[z]m&tag=thecutonsite-20">The Anxiety and Phobia Workbook</a></strong> by Edmund Bourne, Ph.D.<br>
+          (This one goes out to the anxious kid who loved spelling bees and worksheets who grew up into an anxious adult who loves order. (So, most of us?) My mom gave me a copy of an earlier edition of this workbook some 15 years ago, and I pulled it off my shelf whenever I was feeling helpless about my anxiety. It’s dry, obviously — it’s a psychology workbook — but it’s also informative, nonjudgmental, and full of different, scientifically backed approaches you can take to treat your anxiety, both short-term and long-term.)
+          </li>
+
+      </ol>
+  </li>
+
+</ul></p>
+</div>
+<div id="music" class="tabcontent">
+    <h2>Music</h2>
+    <iframe src="https://open.spotify.com/embed/track/1eOfirkC7FIVqcPtO5r5Df?si=hDzzPMlBRmqAm6hNQi43Tw&nd=1" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/0iTpQYzJnYgh7kIxyq8A2O?si=OkXEdmJgS3KEZ8A8eTAreQ&nd=1" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/4HqRhdpxH9zFUkf1kzbr3H?si=7-bubMTpRO2NpoSYbd2Pkw&nd=1" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/5VbZt5Tp8qUGFMRXctKdIi?si=d-3N2xaiRCqIVW9fRPK86A&nd=1" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+</div>
+<div id="connect" class="tabcontent">
+    <h2>Connect With People</h2>
+    <p>Spend time with a friend or family member who will listen to you. It is a natural way to calm you and lower your stress. When you connect with people in person, your body releases a hormone that stops your fight-or-flight response. You relax.</p>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/8S8utJe4ym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/zc5ip--8viU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="movies" class="tabcontent">
+    <h2>Movies</h2>
+<p>Here are some recommendations:
+    <ul>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0119217/?ref_=tt_sims_tt_i_1">Good Will Hunting</a></strong><br>
+        Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.</li>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0359950/">The Secret Life of Walter Mitty</a></strong><br>
+        When both he and a colleague are about to lose their job, Walter takes action by embarking on an adventure more extraordinary than anything he could have ever imagined.</li>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0265666/?ref_=tt_sims_tt_i_10">The Royal Tenenbaums</a></strong><br>
+        The eccentric members of a dysfunctional family reluctantly gather under the same roof for various reasons.</li>
+        <li><p><strong><a href="https://m.imdb.com/title/tt1727388/?ref_=tt_sims_tt_i_9">The Way Way Back</a></strong><br>
+        Shy 14-year-old Duncan goes on summer vacation with his mother, her overbearing boyfriend, and her boyfriend's daughter. Having a rough time fitting in, Duncan finds an unexpected friend in Owen, manager of the Water Wizz water park.</li>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0097165/?ref_=tt_sims_tt">Dead Poets Society</a></strong><br>
+        Maverick teacher John Keating uses poetry to embolden his boarding school students to new heights of self-expression.</li>
+    </ul>
+
+</p>
+</div>
+<div id="motiv" class="tabcontent">
+    <h2>Motivational Videos</h2>
+
+<iframe width="280" height="200" src="https://www.youtube.com/embed/psQkuax3xj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="280" height="200" src="https://www.youtube.com/embed/YPG_6618sWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
+
+<script>
+function openRelief(evt, reliefName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(reliefName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

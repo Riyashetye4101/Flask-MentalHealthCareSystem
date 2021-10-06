@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height:500px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  height:78px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 500px;
+}
+
+</style>
+</head>
+<body>
+
+  {% include 'navbar.html' %}
+<div class="tab">
+  <button class="tablinks" onclick="openRelief(event, 'Nice')" id="defaultOpen">Be Nice To Yourself</button>
+  <button class="tablinks" onclick="openRelief(event, 'Neg')">Identify and Challenge Your Negative Beliefs</button>
+  <button class="tablinks" onclick="openRelief(event, 'Compare')">Stop Comparing Yourself to Others</button>
+  <button class="tablinks" onclick="openRelief(event, 'Pos')" >Surround Yourself With Positive People</button>
+  <button class="tablinks" onclick="openRelief(event, 'Care')">Take Care of Your Body</button>
+  <button class="tablinks" onclick="openRelief(event, 'Talk')">Practice Positive Self-Talk</button>
+
+ </div>
+
+ <div id="Nice" class="tabcontent">
+    <h2><strong>Be Nice To Yourself</strong></h2>
+    <p>
+<ul><li> Make an effort to be kind to yourself and, if you do slip up, try to challenge any negative thoughts.</li>
+<li>A good rule of thumb is to speak to yourself in the same way that you’d speak to your mates.his can be really hard at first, but practise makes perfect. </li>
+<li>Check out <a href="https://au.reachout.com/articles/3-ways-to-talk-yourself-up">tips for talking yourself up.</a></li>
+</ul>
+Try: Writing down three things that you like about yourself.</p>
+<iframe width="400" height="200" src="https://www.youtube.com/embed/wtblrFND6PE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+
+ <div id="Neg" class="tabcontent">
+    <h2><strong>Identify and Challenge Your Negative Beliefs </strong></h2>
+    <p>
+<ul><li>The first step is to identify, and then challenge, your negative beliefs about yourself.</li>
+<li>Notice your thoughts about yourself. For example, you might find yourself thinking
+     ‘I’m not clever enough to do that’ or ‘I have no friends’.</li>
+     <li>When you do, look for evidence that contradicts those statements.</li>
+     <li>Write down both statement and evidence, and keep looking back at
+          it to remind yourself that your negative beliefs about yourself are not true.</li>
+</ul>
+    </p>
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/Kz8MXntjS4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="Compare" class="tabcontent">
+    <h2><strong>Stop Comparing Yourself to Others </strong></h2>
+    <p>
+<li>Whether you compare how you look to your friends on Facebook or you compare your salary to your friend’s income, comparisons aren’t healthy.</li>
+    <li>Researchers found that people who compared themselves to others experienced envy. And the more envy they experienced, the worse they felt about themselves.</li>
+<li>If you’re feeling envious of someone else’s life, remind yourself of your own strengths and successes.</li>
+<li>Consider keeping an ongoing <a href="https://www.verywellmind.com/writing-in-a-gratitude-journal-for-stress-relief-3144887">gratitude journal</a> to help you focus on your own life and not the lives of others.</li>
+<a href="https://www.verywellmind.com/the-stress-of-social-comparison-4154076">How to Stop Constantly Comparing Yourself With Others</a>
+</p>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/oU2MnMhXfUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/6MX9o3Y3DvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="Pos" class="tabcontent">
+    <h2><strong>Surround Yourself With Positive People </strong></h2>
+    <p>
+<li>Pay attention to how your friends make you feel. Do your friends lift you up or bring you down?
+     Are they constantly judging you or do they accept you for who you are? </li>
+     <li>The people you spend time with influence your thoughts and attitudes about yourself more than you think. </li>
+     <li> If you feel bad about yourself after hanging out with a particular person, it may be <a href="https://www.verywellmind.com/how-to-end-friendship-4174037">time to say goodbye. </a></li>
+   <a href="https://www.verywellmind.com/how-to-create-social-support-in-your-life-3144955">How to Create Truly Supportive Friendships</a>
+</p>
+   <iframe width="400" height="215" src="https://www.youtube.com/embed/ecoWc11uuFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="Care" class="tabcontent">
+    <h2><strong>Take Care of Your Body </strong></h2>
+    <p>
+        <li> If you practice <a href="https://www.verywellmind.com/self-care-strategies-overall-stress-reduction-3144729">self-care</a>, you know you're doing something positive for your mind, body, and spirit, and you'll naturally feel more confident.</li>
+    <li>Here are a few self-care practices linked to higher levels of self-confidence:
+        <ol>
+            <li>Diet: Eating well comes with many benefits, including higher levels of self-esteem.</li>
+        <li>Exercise: Regular physical activity improved participants’ body image. And when their body image improved, they felt more confident.</li>
+        <li>Meditation: More than just a relaxation practice, meditation can help boost self-esteem in several ways. For one, it helps you to recognize and accept yourself.</li>
+    <li>Sleep: Skimping on sleep can take a toll on your emotions, whereas good, quality sleep has been linked with positive personality traits, including optimism and self-esteem.</li>
+    </ol>
+    </li>
+    </p>
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/BsSH51FG3tI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="Talk" class="tabcontent">
+    <h2><strong>Practice Positive Self-Talk</strong></h2>
+    <p>
+<li>Using self-talk that is optimistic can help you foster self-compassion, overcome self-doubt, and take on new challenges. </li>
+    <li>Negative self-talk can limit your abilities and lessen your confidence by convincing your
+        subconscious that you "can't handle it" or that something is "too hard" and you "shouldn't even try."</li>
+        <li>Here are a few examples of how to challenge pessimistic self-talk and reframe your thoughts into a more positive way of thinking:
+            <ol>
+                <li>Instead of telling yourself "I can't handle this," or "This is impossible," try reminding yourself that "You can do it," or "all I have to do is try."</li>
+                <li>Instead of telling yourself "I can do nothing right" when you make a mistake, remind yourself "I can do better next time," or "at least I learned something."</li>
+                <li>Instead of saying you "hate" public speaking, use a milder word like "don't like," and remind yourself that "everyone has strengths and weaknesses."</li>
+            </ol>
+        </li>
+</p>
+<iframe width="300" height="150" src="https://www.youtube.com/embed/wmx_35rQIRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="300" height="150" src="https://www.youtube.com/embed/TxU30JMf8mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<script>
+    function openRelief(evt, reliefName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(reliefName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+    </body>
+    </html>

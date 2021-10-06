@@ -1,0 +1,556 @@
+{% extends "navmcq.html" %}
+{% block title %}
+Anxiety test
+{% endblock %}
+{% block content %}
+<div class="container"><br>
+   <h3 >Anxiety Test</h3>
+   <hr>
+    <form action="{{ url_for('mcq') }}" method="POST">
+      <div class="card">
+        <div class="card-header">
+          <h5>Q1. In past 4 weeks, do you have a experience of numbness or tingling?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q1" value="0" required />
+                Not at all.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q1" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q1" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q1" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q2. In past 4 weeks, do you have a experience of feeling hot?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q2" value="0" />
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q2" value="1" required/>
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q2" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q2" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q3. In past 4 weeks, do you have a experience of wobbliness in legs?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q3" value="0" required />
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q3" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q3" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q3" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q4. In past 4 weeks, do you have a experience of unable to relax?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q4" value="0" required />
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q4" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q4" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q4" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q5. In past 4 weeks, do you have a experience of fear of worst happening?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q5" value="0" required />
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q5" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q5" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q5" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q6. In past 4 weeks, do you have a experience of dizzy or ligtheaded?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q6" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q6" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q6" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q6" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q7. In past 4 weeks, do you have a experience of heart pounding / racing?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q7" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q7" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q7" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q7" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q8. In past 4 weeks, do you have a experience of unsteady ?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q8" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q8" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q8" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q8" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q9. In past 4 weeks, do you have a experience of terrified or afraid ?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q9" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q9" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q9" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q9" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q10. In past 4 weeks, do you have a experience of Nervous?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q10" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q10" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q10" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q10" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q11. In past 4 weeks, do you have a experience of feeling of choking ?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q11" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q11" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q11" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q11" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q12. In past 4 weeks, do you have a experience of hands trembling ?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q12" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q12" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q12" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q12" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q13. In past 4 weeks, do you have a experience of shaky/unsteady ?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q13" value="0" required />
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q13" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q13" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q13" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q14. In past 4 weeks, do you have a experience of fear of losing something?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q14" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q14" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q14" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q14" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q15. In past 4 weeks, do you have a experience of difficulty in breathing?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q15" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q15" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q15" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q15" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q16. In past 4 weeks, do you have a experience of fear of dying?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q16" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q16" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q16" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q16" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q17. In past 4 weeks, do you have a experience of scared?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q17" value="0" required />
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q17" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q17" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q17" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q18. In past 4 weeks, do you have a experience of indigestion?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q18" value="0" required />
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q18" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q18" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q18" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q19. In past 4 weeks, do you have a experience of faint/ligtheaded?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q19" value="0" required/>
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q19" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q19" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q19" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Q20. In past 4 weeks, do you have a experience of face flushed?</h5>
+        </div>
+        <div class="card-body">
+          <div class="containermcq">
+            <div class='mcq'>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q20" value="0" required />
+                Not at all
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q20" value="1" />
+                Mildly- but it didn't bother me much.
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q20" value="2" />
+                Moderately- it wasn't pleasant at time
+              </label>
+              <label class="tag">
+                <input type="radio" class="option-input radio" name="q20" value="3" />
+                severly- it bothered me a lot.
+              </label>
+            </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="btn2">
+        <input type="submit" class="btn btn-outline-secondary btn-lg btn-block w-100" value='click here to view the result'>
+      </div>
+    </form>
+
+</div>
+{% endblock %}

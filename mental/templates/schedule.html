@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body{
+            background-color:rgb(45, 45, 46);
+        }
+        .card{
+            background-color: rgb(111, 113, 117);
+            color:White;
+    
+          }
+        .card-title{
+            color:white;
+        }
+    </style>
+    <title>scheduler</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <br>
+    <div class="container">
+        {% if list %}
+     <h5 style="color:white;"> Currently schedule Task for Treatment:-</h5>
+        <hr style="color:white; border-top:5px solid white">
+        
+        {% for i in list %}
+        
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style='color:#48adfa'>{{i.tname}} Test:-</h5>
+             <p class="card-text" > <strong style="color:#64daf5;">Advice:- </strong>  <em> {{i.activity}}</em></p>
+             {% if (i.tname=='relation Analysis') %}
+             <a href="{{ url_for('evolve',s='s',age=t.age) }}" class="btn btn-outline-primary w-25">View Task</a>
+             {% else %}
+              <a href="{{ url_for('task',l=i.level,category=i.tname) }}" class="btn btn-outline-primary w-25">View Task</a>
+              {% endif %}
+            </div>
+        </div>
+            <br><br>
+          {% endfor %}
+    {% else %}
+ <center><h5 style="color:white;">Nothing is schedule yet!</h5></center>   
+    {% endif %}
+   
+</body>
+<script>
+
+</script>
+</html>

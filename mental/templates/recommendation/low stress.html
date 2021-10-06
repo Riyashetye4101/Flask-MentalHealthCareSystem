@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height:580px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  height:78px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 635px;
+}
+</style>
+</head>
+<body>
+
+
+  {% include 'navbar.html' %}
+
+<div class="tab">
+  <button class="tablinks" onclick="openRelief(event, 'London')" id="defaultOpen">Exercise</button>
+  <button class="tablinks" onclick="openRelief(event, 'Paris')">Diet</button>
+  <button class="tablinks" onclick="openRelief(event, 'Tokyo')">Sleep</button>
+  <button class="tablinks" onclick="openRelief(event, 'relax')" >Relaxation Techniques</button>
+  <button class="tablinks" onclick="openRelief(event, 'connect')">Connect With People</button>
+  <button class="tablinks" onclick="openRelief(event, 'behave')">Behaviour</button>
+  <button class="tablinks" onclick="openRelief(event, 'laugh')" >Laugh Therapy</button>
+  <button class="tablinks" onclick="openRelief(event, 'avoid')">Avoid Procrastination</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+  <h2>Exercises</h2>
+  <p>
+      <ul>
+          <li>To start with, physical activity can help improve your sleep. And better sleep means better stress management.</li>
+
+           <li>Exercise also seems to help mood. Part of the reason may be that it stimulates your body to release a number of hormones like endorphins and endocannabinoids that help block pain, improve sleep, and sedate you.</li>
+          <li>Get a dose of stress relief with these exercises:
+<ol>
+            <li>Running</li>
+            <li>Swimming</li>
+            <li>Dancing</li>
+            <li>Cycling</li>
+            <li>Aerobics</li></ol></li>
+            <li>If you don't have the time for a formal exercise program, you can still find ways to move throughout your day. Try these tips:
+               <ol> <li>Bike instead of driving to the store.</li>
+                <li>Use the stairs instead of the elevator.</li>
+                <li>Clean your house.</li>
+                <li>Walk on your lunch break.</li></ol>
+            </li>
+        </ul>
+        <iframe width="272" height="200" src="https://www.youtube.com/embed/6ijg6tpyxXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="272" height="200" src="https://www.youtube.com/embed/V0JF2SqTdps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="272" height="200" src="https://www.youtube.com/embed/ZoJoTGKrnWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h2>Diet</h2>
+  <p><ul>
+      <li> A healthy diet can lessen the effects of stress, build up your immune system, level your mood, and lower your blood pressure.</li>
+  <li>To stay healthy and on an even keel, look for complex carbohydrates, lean proteins, and fatty acids found in fish, meat, eggs, and nuts.</li>
+    <li>Antioxidants help too. They protect your cells against damage that chronic stress can cause. You can find them in a huge variety of foods like beans, fruits, berries, vegetables, and spices such as ginger.</li>
+<li>
+    Be sure to get enough these as part of a balanced diet:
+    <ol>
+        <li>Vitamin C</li>
+        <li>Magnesium</li>
+        <li>Omega-3 fatty acids</li>
+    </ol></li>
+</ul></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YtywYrlUBcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h2>Sleep</h2>
+  <p><ul>
+      <li>Better sleep habits can help reduce stress. This includes both your daily routine and the way you set up your bedroom. </li>
+  <li>Habits that may help include:
+      <ol>
+          <li>Get out in the sunlight.</li>
+          <li>Drink less alcohol and caffeine close to bedtime.</li>
+          <li>Set a sleep schedule.</li>
+          <li>Don’t look at your electronics 30-60 minutes before bed.</li>
+          <li>Try meditation or other forms of relaxation at bedtime.</li>
+      </ol>
+  </li>
+  <li>The role of your bedroom in good sleep hygiene also is important. In general, your room should be dark, quiet, and cool.</li>
+  <li> Your bed also plays an important role. Your mattress should provide support, space and most of all, comfort.</li>
+</ul></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1ZYbU82GVz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="relax" class="tabcontent">
+    <h2>Relaxation Techniques</h2>
+    <p><strong><a href="https://www.webmd.com/balance/guide/the-health-benefits-of-yoga">Yoga:</a></strong><br><br> This is a form of exercise, but it can also be a meditation. There are many <a href="https://www.webmd.com/balance/guide/which-style-of-yoga-is-best-for-you">types of yoga.</a> The ones that focus on slow movement,<a href="https://www.webmd.com/fitness-exercise/features/how-to-stretch">stretching</a> , and deep <a href="https://www.webmd.com/lung/how-we-breathe">breathing </a>are best for lowering your stress.<br><br>
+    <strong><a href="https://youtu.be/z6X5oEIg6Ak">Meditation:</a></strong><br><br>It can lower stress, anxiety, and <a href="https://www.webmd.com/pain-management/guide/understanding-pain-management-chronic-pain">chronic pain</a> as well as improve sleep, energy levels, and mood. To meditate, you will need to:
+    <ul>
+        <li>Find a quiet place.</li>
+        <li>Get comfortable (sitting or lying down).</li>
+        <li>Focus your attention on a word, phrase, object, or even your breath.</li>
+        <li>Let your thoughts come and go and do not judge them.</li>
+    </ul>
+<br>
+<strong><a href="https://youtu.be/odADwWzHR24">Deep Breathing:</a></strong><br><br>When you practice deep breathing, you turn on your body’s natural ability to relax. This creates a state of deep rest that can change how your body responds to stress. It sends more oxygen to your brain and calms the part of your nervous system that handles your ability to relax.
+<br><br>
+<strong><a href="https://www.webmd.com/pain-management/biofeedback-therapy-uses-benefits">Biofeedback:</a></strong><br><br>Learn how to manage your heart rate, muscle tension, and blood pressure when stress hits. Biofeedback gives you information about how your body reacts when you try to relax. Sensors are placed on your body that call out changes in everything from your brain-wave pattern to your muscle tone. <br>
+</p>
+</div>
+<div id="connect" class="tabcontent">
+    <h2>Connect With People</h2>
+    <p>Spend time with a friend or family member who will listen to you. It is a natural way to calm you and lower your stress. When you connect with people in person, your body releases a hormone that stops your fight-or-flight response. You relax.</p>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/8S8utJe4ym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/zc5ip--8viU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="behave" class="tabcontent">
+    <h2>Behaviour</h2>
+<p>How you respond to people directly impacts your stress levels. Manage your response with these tips:
+    <ul>
+        <li>Try not to overcommit yourself</li>
+        <li>Share the responsibility</li>
+        <li>Count to 10 before you respond</li>
+        <li>Walk away from a heated situation</li>
+        <li>Distract yourself with music or podcasts</li>
+    </ul>
+    <iframe width="360" height="200" src="https://www.youtube.com/embed/0BbHW3H_xmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ol>
+    <li>Learn to say no</li>
+    <li>Write Diaries</li>
+    <li>Reduce your caffeine intake</li>
+    <li>Be active</li>
+    <li>Have some 'me time'</li>
+    <li>Work smarter, not harder</li>
+    <li>Try to be positive</li>
+
+</ol>
+</p>
+</div>
+<div id="laugh" class="tabcontent">
+    <h2>Laugh Therapy</h2>
+<p>When you laugh, you take in more oxygen. Your heart, lungs, and muscles get a boost and your body releases those feel-good hormones. Laughter also improves your immune system, lessens pain, and improves your mood for long periods time.</p>
+<iframe width="684" height="385" src="https://www.youtube.com/embed/xVbj4OWT36c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="avoid" class="tabcontent">
+    <h2>Avoid Procrastination</h2>
+<p>
+    <ul>
+        <li>Another way to take control of your stress is to stay on top of your priorities and stop procrastinating.</li>
+    <li>Get in the habit of making a to-do list organized by priority. Give yourself realistic deadlines and work your way down the list.</li>
+   <li>Work on the things that need to get done today and give yourself chunks of uninterrupted time, as switching between tasks or multitasking can be stressful itself.</li>
+</ul>
+</p>
+<iframe width="684" height="385" src="https://www.youtube.com/embed/_cq3y5Bx4yU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<script>
+function openRelief(evt, reliefName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(reliefName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height:580px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  height:78px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 635px;
+}
+</style>
+</head>
+<body>
+
+
+    {% include 'navbar.html' %}
+
+<div class="tab">
+  <button class="tablinks" onclick="openRelief(event, 'London')" id="defaultOpen">Build positive relationships</button>
+  <button class="tablinks" onclick="openRelief(event, 'Paris')">Do's and Don'ts</button>
+  <button class="tablinks" onclick="openRelief(event, 'Tokyo')">Books</button>
+  <button class="tablinks" onclick="openRelief(event, 'counselling')" >Counselling</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+  <h2>Build Positive Relationship</h2>
+  <p>
+      <ul>
+          <li>To Build Positive Relationship with parents go through following tips:</li>
+<ol>
+           <li>Relationships with parents and families give pre-teens and teenagers emotional support, security and safety.</li>
+           <li>Parent's support helps pre-teens and teenagers navigate the ups and downs of adolescence.</li>
+           <li>You can strengthen family relationships with meals, activities, rules, planning trips, meetings, rituals and responsibilities.</li>
+           </ol>
+
+
+        </ul>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/rU5CH6cpFTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h2>Teens and Romantic Relationships Do's and Don'ts</h2>
+  <p><ul>
+
+  <li>Do look for someone you feel comfortable with<br>
+    Being comfortable with someone means:</li>
+
+    <ol>
+        <li>You can be yourself around her.</li>
+        <li>You can have different opinions on something, and know that it’s okay.</li>
+        <li>You trust each other when you’re not together.</li>
+    </ol><br>
+    <li>Don’t forget your friends<br>
+        Some people will drop all their friends after they start dating someone. They might not mean for it to happen, but it still does. Don’t be that person! No one wants a friend who will throw her over for someone else, and you still need a social life outside your boyfriend or girlfriend.</li><br>
+    <li>Do know the difference between good and bad conflict<br>
+        We tend to think of conflict as a bad thing, but it isn’t always. Conflict can even bring a couple closer together if they are able to stick to these rules during a disagreement:</li>
+    <ol>
+        <li>Explain how you feel and be specific</li>
+        <li>Listen to how she feels and try to be understanding</li>
+        <li>Don’t bring up past disagreements</li>
+    </ol>
+</ul></p>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/eNuERrX2D20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h2>Books</h2>
+  <p><ul>
+      <li>You can read book from the following suggestions</li>
+
+      <ol>
+          <li>Best Overall Book for Teens:<p></p><strong><a href="https://www.amazon.com/dp/0972322973?tag=dotdashvwfm-20&linkCode=ogi&th=1&psc=1&ascsubtag=4167093%7Cn6d28b6ee8fe44787a7c21dcd53b6b85c17">You Don't Have to Learn Everything the Hard Way: What I Wish Someone Had Told Me </a></strong> by Laya Saul<br>
+            Reviewers says this book is chock-full of tidbits to help teenagers navigate a complicated world.</li><br>
+          <li>Best Workbook:<p><strong><a href="https://www.amazon.com/dp/1641526106?tag=dotdashvwfm-20&linkCode=ogi&th=1&psc=1&ascsubtag=4167093%7Cn6d28b6ee8fe44787a7c21dcd53b6b85c17">The Ultimate Self-Esteem Workbook for Teens: Overcome Insecurity, Defeat Your Inner Critic, and Live Confidently</a></strong> by Megan MacCutcheon LPC<br>
+            With over 50 different activities and exercises your teen will have endless ways to express themselves.</li>
+          <li>Best Book for Decision Making: <p><strong><a href="https://www.amazon.com/dp/0743265041?tag=dotdashvwfm-20&linkCode=ogi&th=1&psc=1&ascsubtag=4167093%7Cn6d28b6ee8fe44787a7c21dcd53b6b85c17">The 6 Most Important Decisions You'll Ever Make: A Guide for Teens</a></strong> by Sean Kovey<br>
+            Showing teens how to make smart choices regarding the six most crucial points they’ll face.
+
+          </li><br>
+          <li>Best for Self-Esteem:<p><strong><a href="https://www.amazon.com/dp/1601428294?tag=dotdashvwfm-20&linkCode=ogi&th=1&psc=1&ascsubtag=4167093%7Cn6d28b6ee8fe44787a7c21dcd53b6b85c17">Do Hard Things: A Teenage Rebellion Against Low Expectations</a></strong> by Alex Harris<br>
+          They also map out five concrete ways that teens can actually act to bring about personal and social change.
+          </li>
+
+      </ol>
+  </li>
+
+</ul></p>
+</div>
+<div id="counselling" class="tabcontent">
+    <h2>Counselling for teens and dating</h2>
+    <li>Childhood and adolescence is one of the most important stages of development in a human. During their growing years, children and teens face a lot of physical, psychological, identity and relationship changes that are a part of their journey to adulthood. This time can be difficult and at times be overwhelming and while it is normal, some children need help in navigating through it and coming our strong and balanced to take on adult life. Counselling helps teenagers and their families to identify ways to understand and walk this journey in a way that encourages the child’s psycho-social development. Counseling helps teenagers to be safe, feel confident about themselves while engaging and building respectful relationships. It helps children with relationship concerns, social and relationship adjustment, Behavioral concerns, etc. </li><br>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/3802IpMeRAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+<script>
+function openRelief(evt, reliefName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(reliefName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

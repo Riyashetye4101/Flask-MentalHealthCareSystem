@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block title %}
+home page
+{% endblock %}
+{% block content %}
+<div class="container"><br>
+    <div class="card">
+        <h5 class="card-header">Anxiety Test</h5>
+        <div class="card-body">
+          <h6 class="card-title">About this test</h6>
+          <p class="card-text">
+              This is a Anxiety test. Anxiety is an emotion of dread,fear and worry that
+              something will go wrong.While anxiety in small does is good for us, because
+              it motivates us to do our best, when anxiety gets out of hands, it impairs us from
+              leading a happy, peaceful life. Have you feeling particulary anxious? then give this test.
+          </p>
+          <a href="{{ url_for('anxietytest')}}" class="btn btn-primary">Give the test</a>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <h5 class="card-header">Stress Test</h5>
+        <div class="card-body">
+          <h6 class="card-title" >About this test</h6>
+          <p class="card-text">
+            Some days are more stressful than others. Stress can take a toll on our physical and mental health. Learn more about stress and its effects by taking this quiz.
+          </p>
+          <a href="{{ url_for('stresstest')}}" class="btn btn-primary">Give the test</a>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <h5 class="card-header">Selfesteem Test</h5>
+        <div class="card-body">
+            <h6 class="card-title">About this test</h6>
+          <p class="card-text">
+            Do you believe in yourself? Do you give yourself the credit you derserve?
+            self-esteem is an integral part of personal happiness, fulfilling relationships
+            and achievement. This test is design to evaluate your general level of self-esteem
+            and determine whether you need to work on you self-image. Take this self-esteem Test
+            to find out your true sense of self
+          </p>
+          <a href="{{ url_for('selfesteemtest') }}" class="btn btn-primary">Give the test</a>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <h5 class="card-header">Loneliness scale</h5>
+        <div class="card-body">
+            <h6 class="card-title">About this test</h6>
+          <p class="card-text">
+              Loneliness is an unpleasant emotional response to perceived isolation.
+              It is often associated with an unwanted lack of connection and intimacy.
+              Find out your Loneliness score
+          </p>
+          <a href="{{ url_for('lonelinesstest')}}" class="btn btn-primary">Give the test</a>
+        </div>
+      </div>
+     <br>
+      <div class="card">
+        <h5 class="card-header">Depression Test</h5>
+        <div class="card-body">
+            <h6 class="card-title">About this test</h6>
+          <p class="card-text">Take our depression test if you are feeling overwhelming sadness—it's free, quick, confidential, and scientifically validated.</p>
+          <a href="{{ url_for('depressiontest')}}" class="btn btn-primary">Give the test</a>
+        </div>
+      </div><br>
+      <div class="card">
+        <h5 class="card-header">Relationship Evaluation</h5>
+        <div class="card-body">
+            <h6 class="card-title">About this test</h6>
+          <p class="card-text">
+              Want to know about level of your relationship with your partner? This relationship
+              health test is designed to evaluate various aspects of interaction in a couple.Unlike other relationship/love tests, the one you are about to take in not based on value judgments about how a relationship is supposed to work.
+          </p>
+          <a href="{{ url_for('relationshiptest') }}" class="btn btn-primary">Give the test</a>
+        </div>
+      </div><br>
+</div>
+
+{% endblock %}

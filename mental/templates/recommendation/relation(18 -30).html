@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height:580px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  height:78px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 635px;
+}
+</style>
+</head>
+<body>
+
+
+    {% include 'navbar.html' %}
+
+<div class="tab">
+  <button class="tablinks" onclick="openRelief(event, 'London')" id="defaultOpen">To improve relationship</button>
+  <button class="tablinks" onclick="openRelief(event, 'Paris')">Videos</button>
+  <button class="tablinks" onclick="openRelief(event, 'Tokyo')">Books</button>
+  <button class="tablinks" onclick="openRelief(event, 'advice')" > Relationship Advice For Young Couple</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+  <h2>To improve Relationship</h2>
+  <p>
+      <ul>
+          <li>To improve Relationship with your partner go through following tips:</li>
+<ol>
+           <li>Spend time doing enjoyable things together.</li>
+           <li>Show him that you appreciate him/her.</li>
+           <li>Do small things for him.You don’t have to make a sweeping romantic gesture to get your relationship back on track. Small things are sometimes more meaningful than large gestures. Start doing small, thoughtful things for your partner when you are together. This will show him that you care, pay attention, and think about him.</li>
+           <li>Work on your communication<br>
+            This might seem obvious, but if you’ve been with someone for awhile, you may take certain things for granted. You may have stopped sharing things with one another, asking each other questions, or telling each other things that have changed. Get to know your partner again by making an effort to talk</li>
+           </ol>
+
+
+        </ul>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/IwZlFG-3Y4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h2>Videos</h2>
+
+<iframe width="300" height="215" src="https://www.youtube.com/embed/TsLkcAxhzik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/22I8UtcLPvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/wh-PrUh7jMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h2>Books</h2>
+  <p><ul>
+      <li>You can read book from the following suggestions</li>
+
+      <ol>
+          <li>
+            <p></p><strong><a href="https://bookshop.org/books/when-sorry-isn-t-enough-making-things-right-with-those-you-love/9780802407047?sscid=91k5_nepos&utm_source=ShareASale&utm_medium=Affiliate&utm_campaign=314743&utm_term=1535322">When Sorry Isn't Enough </a></strong> by Gary Chapman and Jennifer Thomas<br>
+            There comes a time in every relationship when a screwup can't be covered by a simple sorry. Chapman and Thomas break down what makes for a meaningful apology, and how to potentially fix relationships—from romantic partners to friends and family—that feel strained. Can you guess what that includes? Yup, honesty, the trait that Campbell says is important in every bond we share.</li><br>
+
+          <li><p><strong><a href="https://bookshop.org/books/tiny-beautiful-things-advice-on-love-and-life-from-dear-sugar/9780307949332?sscid=91k5_nerwk&utm_source=ShareASale&utm_medium=Affiliate&utm_campaign=314743&utm_term=1535322">
+            Tiny Beautiful Things </a></strong> by Cheryl Strayed<br>
+            Cheryl Strayed may be most famous for writing "Wild", but before she had a recognizable name, she was the anonymous advice columnist for The Rumpus. Her book "Tiny Beautiful Things" compiles the questions she received and the heartfelt advice she gave under the pen name Sugar, as well as essays she wrote about her own experiences. It's a mix of memoir and universal self-help that'll inspire personal growth and empathy for others.</li><br>
+
+          <li><p><strong><a href="https://bookshop.org/books/the-wisdom-of-sundays-life-changing-insights-from-super-soul-conversations/9781250138064?sscid=91k5_neu66&utm_source=ShareASale&utm_medium=Affiliate&utm_campaign=314743&utm_term=1535322">
+            The Wisdom of Sundays </a></strong> by Oprah Winfrey<br>
+            Leave it to perennial self-help icon Oprah Winfrey to distill her favorite life lessons into one inspirational book. "The Wisdom of Sundays" condenses more than 200 hours of conversations she's had with like-minded public figures on her show, "Super Soul Sunday", to teach us how to live with more fulfillment, connection, and gratitude.
+
+          </li><br>
+          <li><p><strong><a href="https://bookshop.org/books/tell-me-more-stories-about-the-12-hardest-things-i-m-learning-to-say/9780399588396?sscid=91k5_newnl&utm_source=ShareASale&utm_medium=Affiliate&utm_campaign=314743&utm_term=1535322">
+            Tell Me More </a></strong> by Kelly Corrigan<br>
+            The book uses a collection of essays to show how all the different relationships in our lives include one thing: complications. By showing us that she doesn't always get it right, either, Corrigan offers up a mix of hope, humor, and approachable lessons that make the many layers of our relationships feel universal.
+          </li>
+
+      </ol>
+  </li>
+
+</ul></p>
+</div>
+
+<div id="advice" class="tabcontent">
+    <h2>Videos</h2>
+
+  <iframe width="500" height="315" src="https://www.youtube.com/embed/eBVdj_fR7fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+
+<script>
+function openRelief(evt, reliefName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(reliefName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

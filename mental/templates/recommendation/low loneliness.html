@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height:580px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  height:78px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 635px;
+}
+</style>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openRelief(event, 'London')" id="defaultOpen">Tasks</button>
+  <button class="tablinks" onclick="openRelief(event, 'Paris')">Meditate</button>
+  <button class="tablinks" onclick="openRelief(event, 'Tokyo')">Read Books</button>
+  <button class="tablinks" onclick="openRelief(event, 'music')" >Music</button>
+  <button class="tablinks" onclick="openRelief(event, 'connect')">Connect With People</button>
+  <button class="tablinks" onclick="openRelief(event, 'movies')">Movies</button>
+  <button class="tablinks" onclick="openRelief(event, 'motiv')" >Motivational Videos</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+  <h2>Tasks</h2>
+  <p>
+      <ul>
+          <li>You can work on following things:</li>
+<ol>
+           <li>Overcome Your Fears.</li>
+           <li>Try to attend meetups.</li>
+           <li>Go for a quick run.</li>
+           <li>Find an Exercise Class:<br>
+            Being physically active prompts the release of brain chemicals such as neurotransmitters and endorphins, which can boost mood and ease depression symptoms. Exercise can also build confidence and help you cope with stress or anxiety. To combat feelings of loneliness, try participating in a home-based exercise class. Many companies, such as Beachbody, Peloton, and Obé Fitness, offer live or on-demand group classes that make you feel like you are part of a fitness community.
+           </li></ol>
+
+
+        </ul>
+        <iframe width="272" height="200" src="https://www.youtube.com/embed/ybTj2QTRfIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h2>Meditation</h2>
+  <p><ul>
+      <li>It is found that a two-week smartphone-based mindfulness training program reduced loneliness and increased feelings of social connection in daily life. Consider taking a basic meditation class or follow a beginner's audio or video guide through a site like Head Space.</li>
+  <li>Do Experiment With Different Types of Meditation</li>
+
+    <ol>
+        <li><p><strong><a href="https://www.everydayhealth.com/alternative-health/living-with/ways-practice-breath-focused-meditation/">Breath focused-meditation</a></strong></li>
+        <li>Guided imagery meditation, for which you go to an imaginary place to experience different sensations and emotions</li>
+        <li><p><strong><a href="https://www.everydayhealth.com/meditation/types/">Mantra meditation</a></strong>, where you repeat a certain sound, word, or phrase</li>
+    </ol></li>
+</ul></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3CtfeDNbSAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h2>Read</h2>
+  <p><ul>
+      <li>A 2011 study published in Psychological Science found that engrossing yourself in the character in a book’s story can help shift your mood and move your thoughts in a new — and better — direction. <br>
+      You can read book from the following suggestions
+
+      <ol>
+          <li><p><strong><a href="https://www.amazon.com/gp/product/0141441143?ie=UTF8&camp=1789&creativeASIN=0141441143&linkCode=xm2&tag=bustle661-20">Jane Eyre</a></strong> by Charlotte Bronte<br>
+            (Short summary: Orphaned at a young age and forced into a cruel upbringing, Jane's lonely spirit doesn't break. Instead, she only gains strength. While on the search for a better life in a world that doesn't always offer it, Jane begins to learn who she is on her own, a monumental lesson everyone can benefit from. If you've been searching for a motivating character you can relate to, Jane Eyre is the woman for you.)</li>
+          <li><p><strong><a href="https://www.amazon.com/gp/product/140526912X?ie=UTF8&camp=1789&creativeASIN=140526912X&linkCode=xm2&tag=bustle661-20">Louder Than Words</a></strong> by Laura Jarratt<br>
+          (Short summary: Rafi, a girl with selective mutism, hasn't spoken a word in over eight years. Her big brother, Silas, adores her, and includes her in every little detail of his popular and intelligent life. After Silas introduces her to a possible new friend, Rafi suddenly desires to learn to speak again — but she can't find the right words to say. This isolated and unique story highlights true loneliness and what it feels like to try and break out of it, all written in gorgeous prose from Laura Jarratt.)</li>
+          <li><p><strong><a href="https://www.amazon.com/gp/product/143918271X?ie=UTF8&camp=1789&creativeASIN=143918271X&linkCode=xm2&tag=bustle661-20">A Movable Feast</a></strong> by Ernest Hemingway<br>
+          (Short summary: It captures loneliness and uses it as a strength. During his days in Paris, Hemingway notes how many pages he wrote, what he ate, how much he drank, and the little deatils he notices on the busy and bustling streets of the City of Lights. Hemingway shows readers how to enjoy the company of oneself, no matter where you are or what you're doing, even in the midst of loneliness.)
+
+        </li>
+          <li><p><strong><a href="https://www.amazon.com/gp/product/159514188X?ie=UTF8&camp=1789&creativeASIN=159514188X&linkCode=xm2&tag=bustle661-20">Thirteen Reasons Why</a></strong> by Jay Asher<br>
+          (Short summary: This is a dark YA novel, but one packed with enough power to show just how valuable every life is. Clay Jensen, an average high school boy, comes home to find a box filled with cassette tapes made by Hanna Baker, his crush and classmate who committed suicide two weeks earlier. Why read this incredibly tragic book when you're feeling lonely? It'll open your eyes to just how many people actually are there for you, even when you don't always see it. )
+          </li>
+
+      </ol>
+  </li>
+
+</ul></p>
+</div>
+<div id="music" class="tabcontent">
+    <h2>Music</h2>
+    <iframe src="https://open.spotify.com/embed/track/3m7V717IKZqZLW5qUIOxdD?si=uJOJwzZuQsuzk7yvWghjyg&nd=1" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/3Am0IbOxmvlSXro7N5iSfZ?si=yM4ZIemSTZGdKNjgdfmsfg&nd=1" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/6vUssnJuFxgw1EFG717Kd5?context=spotify%3Aalbum%3A4f1WyuUDKJsfFMjUytsbA3&si=1RssfpqpTlyVgZTllevVBg&nd=1" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/4HqRhdpxH9zFUkf1kzbr3H?si=7-bubMTpRO2NpoSYbd2Pkw&nd=1" width="100%" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+</div>
+<div id="connect" class="tabcontent">
+    <h2>Connect With People</h2>
+    <p>Spend time with a friend or family member who will listen to you. It is a natural way to calm you and lower your stress. When you connect with people in person, your body releases a hormone that stops your fight-or-flight response. You relax.</p>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/8S8utJe4ym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/zc5ip--8viU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="movies" class="tabcontent">
+    <h2>Movies</h2>
+<p>Here are some recommendations:
+    <ul>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0335266/">Lost in Translation</a></strong><br>
+        A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.</li>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0449059/?ref_=tt_sims_tt_i_2">Little Miss Sunshine</a></strong><br>
+        A family determined to get their young daughter into the finals of a beauty pageant take a cross-country trip in their VW bus.</li>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0265666/?ref_=tt_sims_tt_i_10">The Royal Tenenbaums</a></strong><br>
+        The eccentric members of a dysfunctional family reluctantly gather under the same roof for various reasons.</li>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0211915/?ref_=nv_sr_srsg_0">Amélie</a></strong><br>
+        Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.</li>
+        <li><p><strong><a href="https://m.imdb.com/title/tt0097165/?ref_=tt_sims_tt">Dead Poets Society</a></strong><br>
+        Maverick teacher John Keating uses poetry to embolden his boarding school students to new heights of self-expression.</li>
+    </ul>
+
+</p>
+</div>
+<div id="motiv" class="tabcontent">
+    <h2>Motivational Videos</h2>
+
+<iframe width="280" height="200" src="https://www.youtube.com/embed/y04OcY_4ttU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="280" height="200" src="https://www.youtube.com/embed/tehIw9u417c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<script>
+function openRelief(evt, reliefName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(reliefName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
