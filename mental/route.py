@@ -15,7 +15,15 @@ def chatbot():
 
 @app.route('/profile')
 def profile():
+    check=None
     test=Test.query.filter(Test.parent_id==current_user.id,Test.end<datetime.today())
+    for i in test:
+        if(i!=None):
+            check=True
+            break
+        else:
+            check=False
+            break
     return render_template('profile.html',test=test)
 
 @app.route('/schedule')
