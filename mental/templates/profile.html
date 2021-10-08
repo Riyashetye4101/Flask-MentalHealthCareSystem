@@ -4,16 +4,18 @@
 <div class="container"><br>
   <h4  style='color:white'>Previous Test details:</h4>
   <hr style='color:white'>
+  {% for i in test %}
   <div class="card">
       <h5 class="card-header">Anxiety Test</h5>
       <div class="card-body">
         <h6 class="card-title">About this test</h6>
         <p class="card-text">
-                
+              {{i.activity}}  
         </p>
         <a href="{{ url_for('anxietytest')}}" class="btn btn-primary">Give the test</a>
       </div>
     </div>
+    {% endfor %}
 </div>
 
 {% endblock %}

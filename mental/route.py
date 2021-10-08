@@ -15,7 +15,8 @@ def chatbot():
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html')
+    test=Test.query.filter(Test.parent_id==current_user.id,Test.end<datetime.today())
+    return render_template('profile.html',test=test)
 
 @app.route('/schedule')
 def schedule():
