@@ -2,6 +2,8 @@
 {% block content %}
 
 <div class="container"><br>
+
+  {% if test!=None %}
   <h4  style='color:white'>Previous Test details:</h4>
   <hr style='color:white'>
   {% for i in test %}
@@ -10,12 +12,19 @@
       <div class="card-body">
         <h6 class="card-title">About this test</h6>
         <p class="card-text">
-              {{i.activity}}  
+              {{i.activity}}
         </p>
         <a href="{{ url_for('anxietytest')}}" class="btn btn-primary">Give the test</a>
       </div>
     </div>
-    {% endfor %}
+  {% endfor %}
+  {% else %}
+<center>
+  <h1 style='color:white'>No previous test found</h1>
+  </center>
+
+  {% endif %}
+
 </div>
 
 {% endblock %}
