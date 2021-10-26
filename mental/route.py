@@ -59,7 +59,7 @@ def task(l,category):
         if l=='low':
             temp='recommendation/low stress.html'
         elif l=='medium':
-            temp='recommendation/med anxiety.html'
+            temp='recommendation/med stress.html'
         else:
             temp='recommendation/High stress.html'
     elif category=='Drepression':
